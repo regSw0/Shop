@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ProductDetailView: View {
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -55,7 +55,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProductDetailView()
     }
 }
 
