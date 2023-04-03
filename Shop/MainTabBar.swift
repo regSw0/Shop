@@ -10,8 +10,14 @@ import SwiftUI
 struct MainTabBar: View {
     var body: some View {
         TabView(selection: .constant(1)) {
-            Text("Tab Content 1").tabItem { Text("Tab Label 1") }.tag(1)
-            ProductDetailView().tabItem { Label("Башмаки", systemImage: "bell") }.tag(2)
+            Text("Tab Content 1")
+                .tabItem { Image("House")
+                }
+                .tag(1)
+            ProductDetailView().tabItem { Label("Башмаки", systemImage: "heart") }.tag(2)
+            ProductDetailView().tabItem { Label("Башмаки", systemImage: "cart") }.tag(3)
+            ProductDetailView().tabItem { Label("Башмаки", systemImage: "house") }.tag(4)
+            ProductDetailView().tabItem { Label("Башмаки", systemImage: "person") }.tag(5)
         }
     }
 }
